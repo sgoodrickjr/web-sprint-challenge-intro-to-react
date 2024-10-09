@@ -11,11 +11,11 @@ function Character({ character }) {
 
   return (
     <div onClick={toggleHomeworld} className="character-card">
-      <h3>{character.name}</h3>
+      <h3 className="character-name">{character.name}</h3>
       <p>ID: {character.id}</p>
       <p>Birth Year: {character.birthYear}</p>
       {/* Conditionally render the homeworld name */}
-      {showHomeworld && <p>Home World: {character.homeworld}</p>}
+      {showHomeworld && <p className="character-planet">Home World: {character.homeworld}</p>}
     </div>
   );
 }
